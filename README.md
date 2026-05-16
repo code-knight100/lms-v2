@@ -1,55 +1,61 @@
 # Enhanced Learning Management System (LMS)
 
-A robust, multi-role full-stack Learning Management System designed to bridge the gap between education and accessibility. This platform enables seamless administration of educational courses, interactive student learning, and structured funding opportunities through external sponsors. Built with Python, Django, and the Django REST Framework (DRF).
+This is a web-based learning platform built using Python and Django. It connects teachers, students, and financial sponsors in one place. The system allows teachers to share courses, students to learn, and sponsors to fund students who need financial help.
 
 ---
 
-## 🚀 Key Features
+## 👥 User Roles
 
-The platform is engineered around **four core user roles**, each possessing distinct permissions, workflows, and dashboards:
+The project has four different types of users, and each has its own permissions and dashboard:
 
-### 1. Admin Dashboard
-* **Full System Control:** Manage all users (Instructors, Students, Sponsors) and monitor global site activity.
-* **Content Moderation:** Review and approve newly created courses and track system-wide enrollments.
-* **Financial Oversight:** Monitor sponsor fundings, distribution tracking, and system analytics.
+1. **Admin (Manager)**
+   * Manages all accounts on the platform.
+   * Sees total numbers like total users, active courses, and how many students are enrolled.
 
-### 2. Instructor Suite
-* **Course Creation & Management:** Full CRUD operations for building structured courses with categories, tags, and modules.
-* **Interactive Assignments:** Create, distribute, and grade student assignment submissions.
-* **Student Tracking:** Monitor enrollment numbers and track performance metrics inside individual courses.
+2. **Instructor (Teacher)**
+   * Creates, updates, and deletes courses.
+   * Gives out assignments and grades student work.
+   * Sees alerts about how well students are keeping up with the course.
 
-### 3. Student Hub
-* **Course Enrollment:** Browse, filter, and search available courses by categories or instructors to enroll instantly.
-* **Learning Portal:** Access course materials, download resources, and view structured modules.
-* **Assignment Submission:** Submit coursework seamlessly and track grading/feedback directly from instructors.
-* **Sponsorship Applications:** Apply for financial aid or course funding directly to active sponsors.
+3. **Student**
+   * Searches for courses they want.
+   * Enrolls in courses, enroll in it and submits assignments.
+   * Receives email alerts about due dates and grades.
 
-### 4. Sponsor Portal
-* **Educational Philanthropy:** Browse student funding requests or general course tracks that require financial backing.
-* **Direct Funding & Allocation:** Safely allocate funds to individual students or specific course tracks.
-* **Impact Tracking:** View detailed dashboards tracking how sponsored funds are utilized and monitor the academic progress of sponsored students.
+4. **Sponsor (Funder)**
+   * Fund the students
+   * See the dashboard and analytics about fund untilization.
+   * See the progress of fund utilization. 
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Key Features Included
 
-* **Backend:** Python, Django Web Framework
-* **API Architecture:** Django REST Framework (DRF)
-* **API Documentation:** DRF Spectacular (OpenAPI 3 / Swagger UI)
-* **Database:** PostgreSQL / MySQL
-* **Authentication:** Token-based Authentication
+* **Full CRUD Operations:** You can Create, Read, Update, and Delete courses, assignments, and user records easily.
+* **Search & Filters:** Students can quickly search for courses. Sponsors can filter students by their progress or status.
+* **Pagination:** Long lists (like pages of courses or student records) are broken down into small, numbered pages so the app loads fast.
+* **Role-Based Login:** Users can only see the pages meant for their specific role using secure login groups.
+* **Emails & Alerts:** The system sends emails for deadlines and scores, plus in-app notifications for new tasks.
 
 ---
 
-## 🏁 Getting Started
+## 🛠️ Tools Used
+
+* **Language:** Python
+* **Web Framework:** Django and Django REST Framework
+* **Documentation Tool:** DRF Spectacular (creates a test page for the backend links)
+* **Database:** PostgreSQL
+
+---
+
+## 🏁 How to Run the Project Locally
 
 ### Prerequisites
-* Python 3.10+
-* Virtual Environment utility (`virtualenv` or built-in `venv`)
+Make sure you have Python installed on your computer.
 
-### Installation & Setup
+### Setup Steps
 
-1. **Clone the repository:**
+1. **Clone this repository to your computer:**
    ```bash
-   git clone [https://github.com/your-username/lms_v2.git](https://github.com/your-username/lms_v2.git)
+   https://github.com/jilani-code369/lms-v2.git
    cd lms_v2
